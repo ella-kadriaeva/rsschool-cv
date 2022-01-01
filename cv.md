@@ -41,7 +41,7 @@ September 2021 (7 monthes)
 
 ## Projects
 
-[https://ella-kadriaeva.github.io/goit-markup-hw-08/] (Practical homework from the course)
+[Practical homework from the course](https://ella-kadriaeva.github.io/goit-markup-hw-08/ "Github link")
 
 ---
 
