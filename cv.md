@@ -37,3 +37,18 @@ Priorities to improve skills in JS programming and frameworks
 
 Full Sack Developer, GoIT Courses
 September 2021 (7 monthes)
+## Work experience: no experience in working with commercial projects
+
+## Projects
+
+[https://ella-kadriaeva.github.io/goit-markup-hw-08/] (Practical homework from the course)
+
+---
+
+## Code examples
+
+---
+
+## English level
+
+I have English level A2.
