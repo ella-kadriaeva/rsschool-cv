@@ -46,6 +46,10 @@ September 2021 (7 monthes)
 ---
 
 ## Code examples
+    const productName = "Droid";
+    console.log(productName);
+    const pricePerItem = 2000;
+    console.log(pricePerItem);
 
 ---
 
