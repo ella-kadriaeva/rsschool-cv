@@ -18,6 +18,18 @@ h2 {
 .header {
   display: flex;
 }
+.visually-hidden {
+      position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 :root {
   --color1: #ffffff;
   --color2: #1f6888;
@@ -196,7 +208,7 @@ a:hover {
 }
 .contact-section,
 .skills-section {
-  margin: 0 0 0 40px;
+  margin: 0 0 80px 40px;
 }
 .sidebar-title {
   color: #fff;
