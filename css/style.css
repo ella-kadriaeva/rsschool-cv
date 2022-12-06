@@ -1,21 +1,22 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #f3f5f8;
   min-height: 100vh;
 }
 html {
   scroll-behavior: smooth;
 }
-
+h1,
+h2 {
+  margin: 0;
+}
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 0 20px;
   margin: 0 auto;
 }
 .header {
   display: flex;
-  background-color: #8cd0ed;
-  border-bottom: 4px solid #1f6888;
 }
 :root {
   --color1: #ffffff;
@@ -30,9 +31,6 @@ a:hover {
 }
 
 /*Header*/
-.about-me-section {
-  margin: 0 auto;
-}
 .nav {
   background-color: #1e2939;
 }
@@ -44,7 +42,7 @@ a:hover {
   margin: 0;
   line-height: 50px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   list-style: none;
 }
 .nav-item {
@@ -81,29 +79,25 @@ a:hover {
   font-size: 22px;
   line-height: 27px;
   color: #000000;
-  margin: 0 0 10px 0;
-}
-
-.profession {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .my-name {
+  font-family: "Inter";
   font-style: normal;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 55px;
-  color: #1e2939;
-  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 0.7;
+
+  text-align: center;
+
+  color: #000000;
 }
 
 .about-me {
-  width: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 600px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -113,9 +107,10 @@ a:hover {
 
 /* My projects */
 
-.my-project-section {
+.my-project-section,
+.my-code {
   width: 485px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .my-projects-list {
@@ -139,17 +134,16 @@ a:hover {
 }
 
 /* My work experience section */
-.orange-lettering {
+.color-lettering {
   color: #1f6888;
 }
 
-.company-job {
+.post-title {
+  font-family: "Inter";
   font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  margin: 0 0 10px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.8;
 }
 
 .work-dates {
@@ -170,7 +164,7 @@ a:hover {
 
 .experience-description {
   padding-left: 17px;
-  margin: 0 0 20px 0;
+  margin: 0 0 80px 0;
 }
 
 .experience-item {
@@ -181,55 +175,39 @@ a:hover {
   color: #333333;
 }
 .my-job-section {
-  margin: 0 0 15px 0;
+  margin: 0 0 80px 0;
 }
 
 /* My education */
 .main-content-title {
+  font-family: "Inter";
   font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  color: #000000;
-  margin: 0 0 10px 0;
-}
-.university {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1f6888;
-  margin: 0 0 10px 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 0.8;
 }
 
 .my-education-section {
   margin-bottom: 40px;
 }
 /* Sidebar section */
-.main-photo {
-  display: block;
-  margin-left: 40px;
-}
+
 .sidebar-section {
   background-color: #8cd0ed;
-  width: 370px;
-  padding: 30px 0;
+  width: 260px;
+  padding: 280px 20px;
 }
 .contact-section,
-.tech-skills-section {
+.skills-section {
   margin: 0 0 0 40px;
-}
-.soft-skills-section {
-  margin: 45px 0 0 40px;
 }
 .sidebar-title {
   color: #fff;
+  font-family: "Inter";
   font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  text-decoration-line: underline;
-  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 0.8;
 }
 /* Contact section */
 .contacts-letter {
@@ -254,11 +232,11 @@ a:hover {
   padding-left: 17px;
 }
 .skill-item {
+  font-family: "Inter";
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #1f6888;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.05;
 }
 .scill-text,
 .page-footer--text {
