@@ -1,7 +1,16 @@
+:root {
+  --color1: #ffffff;
+  --color2: #1f6888;
+  --color-accent: #1e2939;
+  --color-aside: #8cd0ed;
+  --color-title: #000000;
+  --color-text: #333333;
+}
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f3f5f8;
   min-height: 100vh;
+  font-style: normal;
+  font-weight: 400;
 }
 html {
   scroll-behavior: smooth;
@@ -19,7 +28,7 @@ h2 {
   display: flex;
 }
 .visually-hidden {
-      position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -30,24 +39,21 @@ h2 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-:root {
-  --color1: #ffffff;
-  --color2: #1f6888;
-}
+
 .main-container {
   margin-left: 100px;
   margin-top: 50px;
 }
 a:hover {
-  color: #1f6888;
+  color:  var(----color2);
 }
 
 /*Header*/
 .nav {
-  background-color: #1e2939;
+  background-color: var(--color-accent);
 }
 .nav a:hover {
-  color: #8cd0ed;
+  color: var(--color-aside);
 }
 .nav-list {
   padding: 0;
@@ -60,18 +66,19 @@ a:hover {
 .nav-item {
   display: flex;
   margin: 3px;
-  border: 2px solid #1f6888;
+  border: 2px solid var(--color2);
   border-radius: 4px;
-  background-color: #1e2939;
+  background-color: var(--color-accent);
 }
 .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color:var(----color1);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   padding: 5px;
+  color: var(--color1);
 }
 
 .common-container {
@@ -81,7 +88,6 @@ a:hover {
 /* Main content */
 
 .main-content {
-  background-color: #ffffff;
   width: 830px;
 }
 
@@ -90,19 +96,15 @@ a:hover {
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
-  color: #000000;
   margin: 10px 0 10px 0;
 }
 
 .my-name {
-  font-style: normal;
-  font-weight: 400;
+    color: var(--color-title);
+ 
   font-size: 70px;
   line-height: 0.7;
-
   text-align: center;
-
-  color: #000000;
 }
 
 .about-me {
@@ -202,61 +204,47 @@ a:hover {
 /* Sidebar section */
 
 .sidebar-section {
-  background-color: #8cd0ed;
   width: 260px;
-  padding: 280px 20px;
+  padding: 40px 30px;
+  background-color: var(--color-aside);
+  color: var(--color1);
 }
-.contact-section,
-.skills-section {
+.section-block {
   margin: 0 0 80px 40px;
 }
 .sidebar-title {
-  color: #fff;
-  font-style: normal;
-  font-weight: 400;
   font-size: 25px;
   line-height: 0.8;
 }
-/* Contact section */
-.contacts-letter {
-  font-style: normal;
-  font-weight: bold;
+.sidebar-link {
   font-size: 14px;
   line-height: 24px;
-  text-decoration-line: underline;
-  color: #ffffff;
-  margin-right: 5px;
+  text-decoration-color: var(--color1);
+  color: var(--color1);
 }
-.contacts-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  color: #ffffff;
+.sidebar-link:hover {
+  color: var(--color2);
 }
-/* Skills-sections */
-.skills-list {
+.sidebar-list {
   padding-left: 17px;
 }
-.skill-item {
-  font-style: normal;
+.sidebar-item {
   font-weight: 500;
   font-size: 13px;
   line-height: 1.05;
 }
-.scill-text,
+.sidebar-text,
 .page-footer--text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
 }
+
 .page-footer--text {
   margin-left: 40px;
   margin-right: auto;
+  color: var(--color1);
 }
+
 .link__icon {
   height: 40px;
   fill: currentColor;
@@ -269,9 +257,8 @@ a:hover {
 .page-footer {
   display: flex;
   align-items: center;
-
-  border-top: 4px solid #1f6888;
-  background-color: #1e2939;
+  border-top: 4px solid var(--color2);
+  background-color: var(--color-accent);
 }
 .link__item--footer {
   margin-top: 15px;
@@ -281,6 +268,5 @@ a:hover {
 .link--footer {
   margin: 0;
   display: flex;
-
   list-style: none;
 }

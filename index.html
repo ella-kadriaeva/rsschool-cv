@@ -1,15 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css" >
-<title>CV</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" >
+  <title>CV</title>
 </head>
 <body>
+  <header class="container">
+    <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main class="common-container container">
+    <aside class="sidebar-section">
+       
+      <div  class="section-block" id=contacts>
+         <img class="main-photo" src="img/my-photo.jpg" alt="My photo" width="200" height="264">
+        <h3 class="sidebar-title">Contacts</h3>
+        <ul class="sidebar-list">
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="tel:+380504530887">+380504530887</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="mailto:ella.kadriaieva@gmail.com">ella.kadriaieva@gmail.com</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="https://github.com/ella-kadriaeva">GitHub</a>
+          </li>
+        </ul>
+      </div>
+      <div  class="section-block" id=skills>
+        <h3 class="sidebar-title">Tech Skills</h3>
+        <ul class="sidebar-list">
+          <li class="sidebar-item"><span class="sidebar-text">HTML5</span></li>
+          <li class="sidebar-item"><span class="sidebar-text">CSS3</span></li>
+          <li class="sidebar-item"><span class="sidebar-text">GIT</span></li>
+        </ul>
+      </div>
+      <div class="section-block">
+        <h3 class="sidebar-title">Soft Skills</h3>
+        <ul class="sidebar-list">
+          <li class="sidebar-item"><span class="sidebar-text">Teamwork</span></li>
+          <li class="sidebar-item"><span class="sidebar-text">Organized</span></li>
+          <li class="sidebar-item"><span class="sidebar-text">Calm</span></li>
+        </ul>
+      </div>
+      <div class="section-block">
+        <h3 class="sidebar-title">Languages</h3>
+        <ul class="sidebar-list">
+          <li class="sidebar-item"><span class="sidebar-text">English Intermediate</span></li>
+          <li class="sidebar-item"><span class="sidebar-text">Deautsch A2</span></li>
+          <li class="sidebar-item"><span class="sidebar-text">Ukrainish/Russish Native</span></li>
+        </ul>
+      </div>
+    </aside>
+  <section class="main-container">
+    <h1 class="my-name">Kadriaieva Ella</h1>
+    <div class="header">
+      <section class="about-me-section">
+        <h2 class=" main-content-title visually-hidden">About me</h2>
+        <p class="about-me">
+              I have a technical background and have a strong interest in
+              website development. I know well HTML, CSS, JavaScript, frameworks
+              and software platforms Node.js, React. I would like to further
+              improve my skills as a developer. During the implementation of
+              team projects, I gained experience in following the Scrum
+              methodology.
+        </p>
+      </section>
+    </div>
+    <div  class="my-project-section"  id=projects>
+      <h2 class="main-content-title">Projects</h2>
+      <ol class="my-projects-list">
+        <li class="lisi-item"><span class="list-text">
+          <a class="project-link" href="https://ella-kadriaeva.github.io/goit-markup-hw-08/">WebStudio
+          </a>
+                ..............
+                <span class="lisi-item">[</span> HTML5, CSS3, JavaScript
+                <span class="lisi-item">]</span>
+              </span>
+            </li>
+            <li class="lisi-item">
+              <span class="list-text"
+                ><a
+                  class="project-link"
+                  href="https://ella-kadriaeva.github.io/goit-barbershop-1/"
+                  >BarberShop</a
+                >
+                ............
+                <span class="lisi-item">[</span> HTML5, CSS3
+                <span class="lisi-item">]</span>
+              </span>
+            </li>
+
+            <li class="lisi-item">
+              <span class="list-text"
+                ><a
+                  class="project-link"
+                  href="https://ella-kadriaeva.github.io/rsschool-cv/"
+                  >CV/rsschool</a
+                >
+                ...........
+                <span class="lisi-item">[</span> HTML5, CSS3
+                <span class="lisi-item">]</span>
+              </span>
+            </li>
+          </ol>
+        </div>
+        <div class="my-code">
+          <h2 class="main-content-title">My code</h2>
+          <pre>
+                function multiply(a, b){
+                return a * b;
+                }
+                </pre
+          >
+        </div>
+        <!--My jobs-->
+        <div class="my-job-section" id=experience>
+          <h2 class="main-content-title">Work Experience</h2>
+          <h3 class="post-title">Lead engineer of the research laboratory</h3>
+          <p class="color-lettering">«Zaporizhstal», Metinvest</p>
+          <p class="work-dates">
+            01.1996 - 02.2022
+            <span class="work-dates-devider">|</span> Ukraina
+          </p>
+          <ul class="experience-description">
+            <li class="experience-item">
+              communication with technical departments and consumers
+            </li>
+            <li class="experience-item">
+              planned and conduct of metal quality studies
+            </li>
+            <li class="experience-item">
+              performed a technical report of the study results
+            </li>
+          </ul>
+        </div>
+
+        <!--My education-->
+        <div class="my-education-section">
+          <h2  class="main-content-title">Education</h2>
+          <h3 class="post-title color-lettering">GoIT Courses</h3>
+          <p class="post-title">Full Sack Developer</p>
+          <p class="work-dates">
+            09.1921 - 12.2022
+            <span class="work-dates-devider">|</span> Ukraina
+          </p>
+          <h3 class="post-title color-lettering">
+            Zaporizhzhia National Technic University
+          </h3>
+          <p class="post-title">a specialist diploma in material science</p>
+          <p class="work-dates">
+            09.2002 - 05.2007
+            <span class="work-dates-devider">|</span> Ukraina
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="page-footer">
+          <p class="page-footer--text">12.2022</p>
+          <ul class="link--footer">
+            <li class="link__item--footer">
+              <a
+                class="link-soc--footer"
+                href="https://github.com/ella-kadriaeva"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="link__icon link__icon2" width="10">
+                  <use href="./img/symbol.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="link__item--footer">
+              <a
+                class="link-soc--footer"
+                href="https://rs.school/js/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="link__icon">
+                  <use href="./img/symbol.svg#icon-rs_school_js"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
